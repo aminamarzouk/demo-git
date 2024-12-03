@@ -1,0 +1,12 @@
+name: first workflow
+on: 
+  push:
+    branches:
+      - "main"
+
+jobs:
+  example-job: # Name of the job
+    runs-on: ubuntu-latest # The runner environment
+    steps:
+      - name: Print a message
+        run: echo "Workflow executed successfully!"
